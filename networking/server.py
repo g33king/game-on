@@ -16,7 +16,10 @@ def start_listen():
 
 
 def main():
-    start_listen()
+    try:
+        start_listen()
+    except Exception:
+        print("problem occurred")
 
 if __name__ == '__main__':
     main()
